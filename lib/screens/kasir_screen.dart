@@ -8,6 +8,7 @@ import '../providers/product_provider.dart';
 import '../services/transaction_service.dart';
 import '../utils/formatter.dart';
 import '../utils/receipt_printer.dart';
+import '../widgets/pos_app_bar_actions.dart';
 
 class KasirScreen extends StatefulWidget {
   const KasirScreen({super.key});
@@ -54,7 +55,10 @@ class _KasirScreenState extends State<KasirScreen> {
     final cart = context.watch<CartProvider>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Kasir')),
+      appBar: AppBar(
+        title: const Text('Kasir'),
+        actions: const [PosAppBarActions()],
+      ),
       body: Column(
         children: [
           // Pencarian produk

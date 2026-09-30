@@ -44,6 +44,7 @@ dependencies:
   printing: ^5.15.0
   pdf: ^3.13.0
   path_provider: ^2.1.6
+  calendar_date_picker2: ^3.0.0
 
 dev_dependencies:
   flutter_test:
